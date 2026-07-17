@@ -11,12 +11,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='wooma-rag-assistant',
-    version='0.1.0',
+    version='0.1.1',
     description='Une application RAG (Vectoriseur + Chat) créée pour la communauté de développeurs Python en Afrique.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Wooma CI / Communauté Africaine',
-    url='https://github.com/bigdahaut/rag-assistant', # Lien vers votre futur repo
+    url='https://github.com/bigdahaut/wooma-rag-assistant', # Lien vers votre futur repo
     packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
