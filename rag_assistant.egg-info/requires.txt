@@ -1,0 +1,13 @@
+fastapi[all]
+uvicorn[standard]
+chromadb
+requests
+ttkbootstrap
+pypdf
+python-docx
+openpyxl
+numpy
+pymupdf4llm
+markitdown[xlsx]
+pandas
+tabulate

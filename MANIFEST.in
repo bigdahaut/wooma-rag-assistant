@@ -1,0 +1,5 @@
+recursive-include rag_assistant/css *
+recursive-include rag_assistant/js *
+recursive-include rag_assistant/fonts *
+include rag_assistant/favicon.ico
+include requirements.txt

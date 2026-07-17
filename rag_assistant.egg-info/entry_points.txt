@@ -1,0 +1,3 @@
+[console_scripts]
+rag-chat = rag_assistant.rag_chat_app:run_server
+rag-vectorizer = rag_assistant.rag_vectorizer_gui:run_gui
