@@ -16,11 +16,12 @@ Un package Python complet développé par et pour la communauté africaine (Woom
 
 Installez simplement le package via pip :
 
+```bash
 pip install wooma-rag-assistant
 
 Note : Assurez-vous d'avoir Ollama installé et lancé en arrière-plan pour l'inférence des modèles LLM.
 
-## 💻 Cas d'utilisation
+💻 Cas d'utilisation
 
 1. En ligne de commande (CLI)
 
@@ -72,11 +73,30 @@ mon_api.mount("/rag", rag_app)
 if __name__ == "__main__":
     uvicorn.run(mon_api, host="0.0.0.0", port=8000)
 
-
 Rendez-vous ensuite sur http://localhost:8000/rag/ !
 
-
-##  🤝 Contribution
+🤝 Contribution
 
 Vos contributions (Pull Requests) sont les bienvenues pour améliorer cet outil !
+
+---
+
+### 2. Procédure pour mettre à jour sur PyPI (v0.1.2)
+
+1.  **Modifiez `setup.py`** : Changez la ligne `version='0.1.1'` en `version='0.1.2'`.
+2.  **Nettoyez et Recompilez** :
+    ```bash
+    rm -rf dist/ build/ *.egg-info
+    python -m build
+    ```
+3.  **Envoyez sur PyPI** :
+    ```bash
+    twine upload dist/*
+    ```
+4.  **Synchronisez GitHub** :
+    ```bash
+    git add README.md setup.py
+    git commit -m "docs: ajout de la coloration syntaxique au README"
+    git push origin main
+    ```
 
