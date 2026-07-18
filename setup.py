@@ -11,7 +11,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='wooma-rag-assistant',
-    version='0.1.2',
+    version='0.1.3',
     description='Une application RAG (Vectoriseur + Chat) créée pour la communauté de développeurs Python en Afrique.',
     long_description=long_description,
     long_description_content_type="text/markdown",
